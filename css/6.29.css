@@ -1,0 +1,618 @@
+/* beijing 的下拉框 */
+#nav-list{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display:flex;
+}
+#nav-list li{
+    height: 30px;
+    line-height: 30px;
+    /* 上下0px 左右20px */
+    padding: 0 20px;
+}
+/* #nav-list li:hover{
+    background-color: white;
+} */
+#xm{
+    background-color: white;
+}
+#xm.hide{
+    height: 0px;
+}
+#dd{
+    width: 328px;
+    /* height: 333px; */
+    background-color: white;
+    /* border: 1px solid #666666; */
+    position: absolute;
+    top:30px;
+    left:8px;
+    height: 313px;
+    z-index: 2;
+    overflow: hidden;
+    /* transition允许css的属性值在一定的时间区间内平滑地过渡。这种效果可以在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值 */
+    transition: all 0.3s;
+    transition-delay: 0s;
+}
+.hide{
+    height: 0px !important;
+}
+
+#ui-top{
+    margin: 10px 20px 15px 0;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+#ui-bottom{
+    width:280px;
+    height: 100px;
+    border-top: 1px solid #d3cfcf;   
+    margin-left: 20px; 
+    margin-right: 20px;
+    color: #999999;
+    font-size: 14px;   
+}
+#Available{
+    width:280px;
+    height: 30px;
+    /* border-top: 1px solid #d3cfcf;    */
+    margin-top: 10px;
+}
+#Global{
+    width:280px;
+    height: 50px;
+    /* border-top: 1px solid #d3cfcf;    */
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+#bj{
+    background-color: #f10215;
+    color: white;
+}
+#bj a{
+    background-color: #f10215;
+    color: white;
+}
+.item{
+    width: 40px;
+    text-align: center;
+    margin-top :5px;
+    margin-left: 15px;
+    /* border: 1px solid #fffefe; */
+}
+#nav-list li a{
+    color: #999999;
+}
+.item a{
+    color: #999999;
+}
+.item a:hover{
+    color: #f10215;
+}
+.item:hover{
+    background-color: #d3cfcf;
+    color: #f10215;
+}
+.item1{
+    width: 120px;
+}
+
+/* 我的京东下拉框 */
+#wdjd{
+    /* width: 72px;
+    height: 30px; */
+    /* padding-left: 5px; */
+    background-color: white;
+}
+.down{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top:-22px;
+    left:53px;
+}
+#dd1{
+    width: 289px;
+    /* height: 333px; */
+    background-color: white;
+    /* border: 1px solid #666666; */
+    position: relative;
+    top:1px;
+    left:251px;
+    height: 141px;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.3s;
+    transition-delay: 0s;
+}
+/* #wdjd:hover{
+    background-color: rgb(255, 255, 255);
+} */
+#dd1.hide{
+    height: 0px;
+}
+#ui-top1{
+    margin: 10px 20px 15px 0;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+     color: #999999;
+    font-size: 12px; 
+    margin-left: 10px;
+    padding-top: 10px;
+}
+#ui-bottom1{
+    width:288px;
+    height: 40px;
+    border-top: 1px solid #d3cfcf;       
+    color: #999999;
+    padding-top: 10px;
+    font-size: 12px;   
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+/*企业采购下拉框  */
+nav{
+    width: 66px;
+    height: 30px;
+}
+.navqiye{
+    padding-left: 5px;
+    position: relative;
+    top: 3px; 
+    font-size: 12px;
+    /* 设置字变得和背景一样的颜色 */
+    color:rgb(153, 153, 153); 
+}
+#n{
+    background-color: white;    
+    border-top: #d3cfcf 1px solid;
+    border-right: #d3cfcf 1px solid;
+    border-left: #d3cfcf 1px solid;
+}
+#n.hide{
+    height: 0px ;
+}
+.down-1{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:7px;
+    left: 473px;
+    /* 图片居中 */
+    /* vertical-align: middle; */
+}
+#dd2{
+    width: 157px;
+    /* height: 333px; */
+    background-color: white;
+    border-bottom: #d3cfcf 1px solid;
+    border-right: #d3cfcf 1px solid;
+    border-left: #d3cfcf 1px solid;
+    /* border: 1px solid #666666; */
+    position: absolute;
+    top:30px;
+    left:420px;
+    height: 70px;
+    display: none;
+    /* overflow: hidden; */
+    transition: all 0.3s;
+    transition-delay: 0s;
+    font-size: 12px;
+    color: #999999;
+    z-index: 2;
+}
+
+#ui-top2{
+    margin: 10px 20px 15px 0;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;    
+    margin-left: 10px;
+    
+}
+.item2{
+    width: 60px;
+    margin-top: 5px;
+}
+
+/* 客户服务下拉框 */
+.navkehu{
+    padding-left: 5px;
+    position: relative;
+    top: 3px; 
+    font-size: 12px;
+    /* 设置字变得和背景一样的颜色 */
+    color:rgb(153, 153, 153); 
+}
+.down-2{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:7px;
+    left: 562px;
+    /* 图片居中 */
+    /* vertical-align: middle; */
+}
+#khfw{
+    background-color: white;   
+    
+}
+#khfw.hide{
+    height: 0px ;
+}
+#dd3{
+    width: 170px;
+    height: 249px;
+    background-color: white;
+    /* border: 1px solid #666666; */
+    border-bottom: #d3cfcf 1px solid;
+    border-right: #d3cfcf 1px solid;
+    border-left: #d3cfcf 1px solid;
+    position: absolute;
+    top:29px;  
+    z-index: 2;
+    display: none;
+    /* overflow: hidden; */
+    transition: all 0.3s;
+    transition-delay: 0s;
+}
+/* #dd3.hide{
+    height: 0px ;
+} */
+#ui-top3{
+    margin: 0px 20px 15px 0;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;    
+    margin-left: 10px;
+    padding-top: 10px;
+    font-size: 12px;
+}
+#ui-bottom3{
+    border-top: 1px solid #d3cfcf;       
+    padding-top: 10px;
+    font-size: 12px;   
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+.item3{
+    width:60px;
+    padding-top: 6px;  
+    color: #999999;
+}
+#item-client{
+    width: 170px;
+    padding-left: 6px;
+    color: #666;
+    font-weight: 700;
+}
+#item-business{
+    width: 170px;
+    padding-left: 13px;
+    color: #666;
+    font-weight: 700px;
+}
+
+/* <!-- 网站导航下拉框 -->  */
+nav a{
+    color: #999999;
+}
+.down-3{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top:7px;
+     /*left: 582px; */
+    /* 图片居中 */
+    /* vertical-align: middle; */
+}
+#wzdh{
+    background-color: white;      
+}
+#wzdh.hide{
+    height: 0;
+}
+.navwzdh{
+    padding-left: 5px;
+    position: relative;
+    top: 3px; 
+    font-size: 12px;
+    /* 设置字变得和背景一样的颜色 */
+    color:rgb(153, 153, 153); 
+}
+#dd4{
+    width: 1190px;
+    height: 181px;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+    background-color: white;
+    position: absolute;
+    top:30px;
+    left:-400px;
+    /* right:-15px;     */
+    z-index: 2;
+    /* display: none; */
+    overflow: hidden;
+    transition: all 0.3s;
+    transition-delay: 0s;
+    font-size: 12px;
+    color: #999999;
+}
+#dd4.hide{
+    height:-20px;
+}
+.fore1{
+    width: 360px;
+    height: 149px;
+    padding:15px 0; 
+    /* border-right: 1px solid #666666; */
+    /* position: relative;
+    top:-15px;  */
+    color: #999999;      
+}
+.fore1 dt{
+    font-weight: 700;
+    width: 360px;
+    padding-left:13px; 
+}
+.fore1 dd{
+    width: 360px;
+    height: 139px;
+    padding-top: 5px;
+    padding-left:10px; 
+    margin:0px;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+.itemfore1{
+    width: 85px;
+    height: 20px;
+}
+.fore2{
+    width: 276px;
+    height: 158px;
+    padding:15px 0; 
+    border-left: 1px solid #e0e0e0;
+    /* position: relative;
+    top:-15px; */
+}
+.fore2  dt{
+    font-weight: 700;
+    width: 360px;
+    padding-left:23px; 
+}
+.fore2  dd{
+    width: 276px;
+    height: 139px;
+    padding-top: 5px;
+    padding-left:10px; 
+    margin:0px;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+.itemfore2{
+    width: 70px;
+    height: 20px;
+    /* border: 1px solid #e0e0e0; */
+}
+
+.fore3{
+    width: 276px;
+    height: 158px;
+    padding:15px 0; 
+    border-left: 1px solid #e0e0e0;
+    /* position: relative;
+    top:-15px; */
+}
+.itemfore3{
+    width: 75px;
+    height: 20px;
+    /* border: 1px solid #e0e0e0; */
+}
+.fore3  dt{
+    font-weight: 700;
+    width: 360px;
+    padding-left:23px; 
+}
+.fore3  dd{
+    width: 276px;
+    height: 139px;
+    padding-top: 5px;
+    padding-left:10px; 
+    margin:0px;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+.fore4{
+    width: 276px;
+    height: 125px;
+    padding:15px 0; 
+    border-left: 1px solid #e0e0e0;
+    /* position: relative;
+    top:-15px; */
+}
+.fore4  dt{
+    font-weight: 700;
+    width: 360px;
+    padding-left:23px; 
+}
+.fore4  dd{
+    width: 276px;
+    height: 111px;
+    padding-top: 5px;
+    padding-left:10px; 
+    margin:0px;
+    justify-content: space-around;
+     /* 弹性布局  让布局变成横向排列*/    
+     display: flex;
+     /* 折行，默认是不折行的 */
+     align-items: center;
+     flex-wrap: wrap;
+}
+
+
+/* 回到顶部 */
+#J_toolbar{
+    position: fixed;
+    width: 34px;
+    height: 770px;
+    /* border:#f10215 1px solid; */
+    right:0;
+    top:0;
+}
+.all{
+    position: absolute;
+    width: 6px;
+    background-color: #7a6e6e;
+    height: 100%;
+    right:0;
+    top:0;
+}
+
+.J_tabs{
+    width: 33px;
+    height: 220px;
+    position: absolute;
+    top:240px;
+    right:0;
+    margin: 0;    
+}
+.J_trigger_item{
+    background-color: #7a6e6e;
+    width: 33px;
+    height: 35px;
+    margin-top: 1.5px;
+    border-radius: 5px 5px 0 5px ;
+    cursor: pointer;
+}
+#yonghu{
+    width: 69px;
+    height: 35px;
+    position: absolute;
+    top:2px;
+    right:28px;
+    background-color: #e33333;
+    font-size: 12px;
+    display: none;
+    /* overflow: hidden; */
+    border-radius: 5px 5px 0 5px ;
+}
+#yonghu a{
+    display: inline-block;
+    color: white;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+
+.J-img{
+    width: 18px;
+    height: 18px;
+    color: white;
+    position: relative;
+    top: 7px;
+    left: 6px;
+}
+#J-trigger{
+    width: 34px;
+    height: 35px;
+    background-color: #5f5f5f;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px 5px 0 5px ;
+    cursor: pointer;
+}
+#J-trigger:hover{
+    background-color: #e33333;
+}
+.tab-text{
+    width: 40px;
+    height: 35px;
+    background-color: #e33333;
+    position: fixed;
+    cursor: pointer;
+    /* overflow: hidden; */
+    display: none;
+    transition: all 0.3s;
+    transition-delay: 0s;
+    bottom: 0;
+    right: 28px;
+    font-size: 12px;
+    text-align: center;
+    color: white;
+    line-height: 35px;
+    border-radius: 5px 5px 0 5px ;
+}
+.img-foot{
+    width: 19px;
+    height: 20px;
+    padding-top: 8px;
+    padding-left: 7px;
+}
+
+/* 侧面弹框购物车 */
+#j_shop{
+    width: 69px;
+    height: 35px;
+    position: absolute;
+    top:38px;
+    right:28px;
+    background-color: #e33333;
+    font-size: 12px;
+    display: none;
+    border-radius: 5px 5px 0 5px ;
+}
+#j_shop a{
+    display: inline-block;
+    color: white;
+    padding-top: 8px;
+    padding-left: 8px;
+}
+.j2:hover #j_shop{    
+    display: block;
+}
+.j2:hover{
+    background-color: #e33333;
+}

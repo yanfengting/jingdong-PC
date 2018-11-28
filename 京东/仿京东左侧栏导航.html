@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+        <title></title>
+        <style type="text/css">
+        body{font-size:12px}
+      ul,li{list-style-type:none;padding:0px}
+        .menu{width:190px;border:solid 1px #E5D1A1;background-color:#FFFDD2}
+         .optn{width:190px;line-height:28px;border-top:dashed 1px #ccc; z-index:100px; position:relative}
+        .content{padding-top:10px; clear:left}
+       a{text-decoration:none;color:#666;padding:10px}
+     .optnFocus{background-color:white;font-weight:bold}
+        div{padding:10px}
+        div img{float:left;padding-right:6px}
+        span{padding-top:3px;font-size:14px;font-weight:bold;float:left}
+        .tip{width:190px;position:absolute;padding:10px;display:none;}
+        .tip li{line-height:23px}
+        .focus{border:solid 1px red;background-color:white}
+        
+    </style>
+    <script src="../js/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.optn').bind({ mouseover: function () {
+                var liTop = 12;
+                var liLeft = $(this).position().left + $(this).width();
+                if (($(this).position().top) > ($(this).next('ul').height())) {
+                    liTop = $(this).position().top;
+                }
+                $(this).css('border-right', '0');
+                $(this).next('.tip').show().css({ 'left': liLeft + 'px', top: liTop + 'px' });
+                $(this).addClass('focus');
+                $(this).next('.tip').addClass('focus');
+            }, mouseout: function () {
+                $(this).next('.tip').hide();
+                $(this).removeClass('focus');
+            } 
+            });
+        });
+    
+    
+    </script>
+    </head>
+    <body>
+    <ul>
+        <li class="menu">
+            <div>
+                <span>网站分类</span>
+            </div>
+            <ul class="content">
+                <li class="optn"><a href="#">.NET技术（10）</a></li>
+                <ul class="tip">
+                    <li><a href="#">.NET新手区（0）</a></li>
+                    <li><a href="#">ASP.NET(2)</a></li>
+                    <li><a href="#">C#(5)</a></li>
+                    <li><a href="#">WinForm(0)</a></li>
+                    <li><a href="#">Silverlight(0)</a></li>
+                    <li><a href="#">WCF(0)</a></li>
+                    <li><a href="#">CLR(0)</a></li>
+                    <li><a href="#">XNA(0)</a></li>
+                    <li><a href="#">VS2010(0)</a></li>
+                    <li><a href="#">ASP.NET MVC(1)</a></li>
+                    <li><a href="#">控件开发</a></li>
+                    <li><a href="#">Entity Framework(0)</a></li>
+                </ul>
+                <li class="optn"><a href="#">编程语言</a></li>
+                <ul class="tip">
+                    <li><a href="#">Java(3)</a></li>
+                    <li><a href="#">PHP(1)</a></li>
+                    <li><a href="#">C++(3)</a></li>
+                    <li><a href="#">Delphi(2)</a></li>
+                    <li><a href="#">Python(1)</a></li>
+                    <li><a href="#">Ruby(1)</a></li>
+                    <li><a href="#">C(1)</a></li>
+                    <li><a href="#">Erlang(0)</a></li>
+                    <li><a href="#">Verilog(0)</a></li>
+                </ul>
+                <li class="optn"><a href="#">软件设计（2）</a></li>
+                <ul class="tip">
+                    <li><a href="#">架构设计（0）</a></li>
+                    <li><a href="#">面向对象（0）</a></li>
+                    <li><a href="#">设计模式（2）</a></li>
+                  
+                </ul><li class="optn"><a href="#">Web前段（19）</a></li>
+                <ul class="tip">
+                    <li><a href="#">Html/Css(8)</a></li>
+                    <li><a href="#">Javascript(7)</a></li>
+                    <li><a href="#">jQuery(3)</a></li>
+                    <li><a href="#">Html5(1)</a></li>
+    
+    
+            
+                   
+                </ul>
+                <li class="optn"><a href="#">企业信息化（0）</a></li>
+                <ul class="tip">
+                    <li><a href="#">SPA(0)</a></li>
+                    <li><a href="#">SharePoint(0)</a></li>
+                    <li><a href="#">GIS技术（0）</a></li>
+                    <li><a href="#">Oracle ERP(0)</a></li>
+                    <li><a href="#">Dynamics CRM(0)</a></li>
+                    <li><a href="#">K2 BPM（0）</a></li>
+                    <li><a href="#">企业信息化其他(0)</a></li>
+              
+                   
+                </ul>
+                <li class="optn"><a href="#">手机开发（2）</a></li>
+                <ul class="tip">
+                    <li><a href="#">Android(2)</a></li>
+                    <li><a href="#">IOS(0)</a></li>
+                    <li><a href="#">Windows Phone(0)</a></li>
+                    <li><a href="#">Windows Mobile(0)</a></li>
+                    <li><a href="#">其他手机开发(0)</a></li>
+               </ul>
+                <li class="optn"><a href="#">软件工程（3）</a></li>
+                <ul class="tip">
+                    <li><a href="#">敏捷开发(1)</a></li>
+                    <li><a href="#">项目于团队管理(2)</a></li>
+                    <li><a href="#">软件工程其他(0)</a></li>
+                   
+    
+    
+               </ul>
+                <li class="optn"><a href="#">数据库技术（5）</a></li>
+                <ul class="tip">
+                    <li><a href="#">SQL Server(0)</a></li>
+                    <li><a href="#">Oracle(4)</a></li>
+                    <li><a href="#">MySQL(1)</a></li>
+                    <li><a href="#">NoSQL(0)</a></li>
+                    <li><a href="#">其他数据库(0)</a></li>
+               </ul>
+                <li class="optn"><a href="#">操作系统（2）</a></li>
+                <ul class="tip">
+                    <li><a href="#">Windows 7(1)</a></li>
+                    <li><a href="#">Windows Server(0)</a></li>
+                    <li><a href="#">Linux(1)</a></li>
+                 
+    
+    
+               </ul>
+                <li class="optn"><a href="#">其他分类（7）</a></li>
+                <ul class="tip">
+                    <li><a href="#">非技术区(4)</a></li>
+                    <li><a href="#">软件测试(0)</a></li>
+                    <li><a href="#">代码与软件发布(0)</a></li>
+                    <li><a href="#">计算机图形学(0)</a></li>
+                    <li><a href="#">Google(0)</a></li>
+                    <li><a href="#">程序人生(2)</a></li>
+                    <li><a href="#">求职面试(0)</a></li>
+                    <li><a href="#">读书区(0)</a></li>
+                    <li><a href="#">转载区(0)</a></li>
+               </ul>
+                <li class="optn"><a href="#">所有随笔（684）</a></li>
+    
+    
+                <li class="optn"><a href="#">所有评论（484）</a></li>
+               
+            </ul>
+        </li>
+    </ul>
+    <span></span>
+    
+    
+    </body>
+    
+    </html>   

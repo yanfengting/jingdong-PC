@@ -1,0 +1,421 @@
+body{
+    /* width: 100%; */
+    height: 700px;
+    /* overflow:-Scroll;
+    overflow-x:hidden; */
+    /* 去掉页面的自带的8px的外边距 */
+    margin:0;
+    position: relative;
+    background-color: white;
+}
+#logo{
+    width: 170px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: absolute;  
+    left:174px; 
+}
+#hydl{
+    width: 170px;
+    height: 60px;
+    position: absolute;  
+    text-align: center;
+    line-height: 90px;
+    font-weight: 700;
+    font-family: Arial, Verdana, "宋体";
+    color: rgb(102, 102, 102);
+    display: inline-block;
+    font-size: 25px;
+    /* justify-content: center; */
+    /* vertical-align: middle; */
+}
+#q-link{
+    width: 136px;
+    height:18px;
+    font-size: 12px;
+    display:inline-block ;   
+    position: absolute;
+    right:100px;
+    top:54px;
+}
+a.a1:link {
+    color: #999999;
+    text-decoration: none;
+}
+a.a1:hover {
+    color: red;
+    text-decoration:underline;
+}
+a.black:link{
+    color: black;
+    text-decoration: none;
+}
+a.black:hover{   
+    text-decoration:underline;
+}
+#a2{
+    color:#e4393c;
+    text-decoration: none;
+}
+#a3{
+    color:#666666;
+    text-decoration: none;
+}
+#a2:hover {
+    font-weight: 700;
+    color:#e4393c;
+}
+#a3:hover {  
+    font-weight: 700;
+    color:#e4393c;
+}
+a.box-b{
+    color:white;
+    text-decoration: none;
+}
+a.a4:link{
+    color:#e4393c;
+    font-family: Arial, Verdana, "宋体";
+    font-size:14px;
+    text-decoration: none;
+}
+a.a4:hover{
+    color:#e4393c;
+    text-decoration:underline;
+}
+a.a5:link{
+    color:black;
+    font-family: Arial, Verdana, "宋体";
+    font-size:14px;
+    text-decoration: none;
+}
+a.a5:hover{
+    color:#e4393c;
+    text-decoration:underline;
+}
+#content{
+    width: 100%;
+    height:498px;
+    background-color: #fff8f0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 18px;
+    position: relative;
+    top:78px;
+    text-align: center;
+}
+.tips-wrapper{
+    width:1345px;
+    height:38.9px;
+    background-color: #fff8f0;
+    line-height: 18px;
+    position: relative;
+    top:-10px; 
+    font-family: Arial, Verdana, "宋体";
+}
+.login-wrap{
+    width:1343px;
+    height:472px;
+    line-height: 18px;
+    position: relative;
+    top:-10px; 
+}
+#p{
+    width: 1349px;
+    height:40px;
+    text-align: center;
+    position: relative;
+    top:-25px;
+    font-size: 12px;
+    color: #999999;
+}
+.black{
+    color: #000;
+}
+#icon{
+    position: relative;
+    top:8px;
+    right:400px;
+}
+
+.login-banner{
+    width: 1345px;
+    height:475px;
+    background-color: #fe1d85;
+}
+#banner-bg{
+    position: absolute;
+    left:160px;
+}
+.login-form{
+    width:346px;
+    height:437.9px;
+    background-color: white;
+    /* line-height: 400px; */
+    position: absolute;
+    right:150px;
+    top:10px;
+}
+.cont-wrapper{
+    width:346px;
+    height:38.9px;
+    background-color: #fff8f0;
+    line-height: 18px;    
+}
+#icon_1{
+    position: relative;
+    top:10px;
+    right:150px;
+}
+#p_1{
+    position: relative;
+    top:-21px;
+    font-family: Arial, Verdana, "宋体";
+    font-size: 12px;
+    color: #999999;   
+}
+.login-tip{
+    width:344px;
+    height:55px;
+    text-align:center; 
+    line-height:55px;
+    border: #f4f4f4 solid 1px;
+    /* border-top:thin;
+    border-left:thin;
+    border-right:thin; */
+}
+#tip1{
+    width:173px;
+    height:55px;
+    float: left; 
+    font-size: 18px;
+    font-weight: 700;
+    /* color:#666666;    */
+    color: #e7493c;
+  
+}
+/* 扫码登录 */
+#login-qrcode{
+    width:336px;
+    height:289.1px;
+    border-bottom: #f4f4f4 1px solid;
+    padding-bottom: 10px; 
+    
+}
+.mc{
+    width: 306px;
+    height: 243px;
+    margin: 0px auto;
+    position: relative;
+    top:24px;
+    /* */
+}
+.qrcode-main{
+    width: 306px;
+    height: 168px;
+}
+.img-j{
+    width: 147px;
+    height: 147px;
+    vertical-align: middle;
+}
+
+.qrcode-help{
+    position: absolute;
+    right: -18px;
+    top: -2px;
+    width: 141px;
+    height: 168px;
+    z-index: 2;
+    background-image: url("https://misc.360buyimg.com/user/passport/1.0.0/css/i/phone-orange.png");
+    display: none;
+}
+.qrcode-panel{
+    width: 257px;
+    height: 18px;
+    font-weight: 400;
+    line-height: 18px;
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    font-family: Arial, Verdana, "宋体";
+    margin:18px 24px 14px 24px;
+}
+.qrcode-a{
+    color:#e4393c;
+    text-decoration: none;
+}
+#qrCoagent{
+    font-size: 12px;
+    color: rgb(102, 102, 102);
+    font-family: Arial, Verdana, "宋体";
+}
+.img-123{
+    position: relative;
+    top: 10px;
+}
+
+#tip2{
+    width:158px;
+    height:55px;
+    float:right;
+    font-size: 18px;
+    font-weight: 400;
+    /* color: #e7493c; */
+}
+/* 账户登录 */
+#login-box{
+    width:346px;
+    height:289.1px;
+    display: none;
+}
+#box-lxr{
+    position: relative;
+    top:10px;
+    left:10px;
+    /* width: 38px;
+    height: 37px; */
+    /* border: #bdbdbd solid 1px; */
+    /* background-color: #f3f3f3; */
+    float: left;
+}
+#box-mm{
+    position: relative;
+    top:10px;
+    left:10px;
+    vertical-align: middle;
+    /* width: 38px;
+    height: 37px; */
+    /* border: #bdbdbd solid 1px; */
+    /* background-color: #f3f3f3; */
+    float: left;
+}
+#loginname{
+    width: 260px;
+    height: 34px;
+    border-left: #bdbdbd solid 1px;
+    float: right;
+}
+#mmname{
+    width: 260px;
+    height: 34px;
+    border-left: #bdbdbd solid 1px;
+    float: right;
+}
+.box-login{
+    width:304px;
+    height:38px;
+    border: #bdbdbd solid 1px;
+    margin-top: 30px;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right:20px;
+    display: inline-block;
+}
+.box-mima{
+    width:304px;
+    height:38px;
+    border: #bdbdbd solid 1px;
+    background-color: #f3f3f3;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right:20px;
+}
+.box-wjmm{
+    margin-top: 10px;
+    margin-right: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    float:right;
+}
+.box-login-dl{
+    width:304px;
+    height:38px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right:20px;
+    text-align: center;
+    background-color: #e4393c;
+    line-height: 38px;
+    font-size: 20px;
+}
+#login-form a:hover{
+    color:  #ffffff;
+}
+#box-b{
+    font-size: 20px;
+    text-align: center;
+}
+.login-buttom{
+    width:306px;
+    height:50px;
+    background-color: #fcfcfc;
+    line-height: 18px;   
+    font-size: 12px;
+    /* position: relative; */
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 50px;
+    /* text-align: center; */
+}
+#icon-qq{
+    width:19px;
+    height:19px;
+    position: relative; 
+     top:5px;
+    /* float:left; */
+}
+#icon-wx{
+    width:19px;
+    height:19px;
+    position: relative;
+    top:5px;
+}
+#icon-zc{
+    width:16px;
+    height:16px;
+    position: relative;
+    top:5px; 
+}
+#login1{
+    width:60px;
+    height:49px;
+    float:left;
+}
+#login0{
+    width:20px;
+    height:49px;
+    float:left;
+    line-height: 49px;
+}
+#login2{
+    width:60px;
+    height:49px;
+    float:left;
+}
+#login3{
+    width:120px;
+    height:49px;
+    float:right;
+    margin-right: -20px;
+    line-height: 50px;
+}
+#bottom{
+    width:1345px;
+    height:225px;
+    position: relative;
+    top:100px;
+    text-align: center;
+}
+.copyright{
+    margin-top: 20px;
+    color: #666666;
+    font-size: 12px;   
+}
+#l{
+    color: #bdbdbd;
+}
+/* 扫码登录 */

@@ -1,0 +1,127 @@
+/* 滑动到一定地方出现搜索框 */
+*{
+    margin: 0;
+    padding: 0;
+}
+#header-header{
+    width: 1349px;
+    height: 48px;
+    background-color: white;
+    position: fixed;
+    border-bottom: #f10214 2px solid;
+    line-height: 18px;
+    z-index: 100;    
+    display: none;        
+}
+#search-head{
+    margin: 0 auto;
+    width: 550px;
+    height: 35px;
+    position: relative;
+    top:5px;
+    /* float: left; */
+    /* display: inline-block; */
+}
+#input-head{
+    width: 500px;
+    height: 35px;
+    /* float: left; */
+    background-color: #efefef;            
+    border: #efefef 1px solid;
+}
+#btn-head{
+    width: 45px;
+    height: 37px;
+    position: relative; 
+    top:-29px;
+    right:402px;
+    float: right;
+    border: #f10214 1px solid;
+    background-color:#f10215;
+}
+#img-jd{
+    position: relative;
+    left: 100px;
+    float: left;
+}
+#img-btn{
+    width: 22px;
+    height: 21px;
+}
+#camera-head{
+    width: 25px;
+    height: 25px;
+    position: relative;  
+    left:-33px;
+    top:5px;  
+}
+/* 家用电器的弹框 */
+#clearfix{
+    width: 1000px;
+    height: 447px;
+    border: rgb(226, 225, 225) 1px solid;
+    
+    -shadow:2px 1px 2px 1px rgb(211, 209, 209) ;
+    background-color: #fff;
+    z-index: 2;
+    /* margin-top:-27px; */
+    position: absolute;
+    left: 190px;
+    top: 0px;
+    display: none;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.cart-part{
+    width: 998px;
+    height: 454px;
+    /* display: inline; */
+}
+.cart-part1{
+    width: 800px;
+    height: 424px;
+    float: left;
+}
+#cate_channel{
+    width: 800px;
+    height: 24px;
+    padding-left: 20px;
+}
+.cate_lk{
+    display: inline-block;
+    width: 73px;
+    height: 24px;
+    margin-right: 10px;
+    padding: 0 10px;
+    background-color: #333;
+    line-height: 24px;
+    color: #fff;
+}
+
+.cate_detail{
+    width: 800px;
+    height: 400px;
+    font-size: 12px;
+    color: #666;
+}
+.cate_detail_item{
+    display: flex;
+    float: left;
+}
+.cate_detail_item dt{
+    padding: 0 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 10px;
+    color:rgb(133, 131, 131);
+}
+.cate_detail_item dd{
+    margin-top: 10px;
+    padding: 0 5px;
+    
+}
+.cart-part2{
+    width: 198px;
+    height: 424px;
+    float: right;
+}

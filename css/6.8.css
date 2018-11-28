@@ -1,0 +1,535 @@
+body{
+    /* 去掉页面的自带的8px的外边距 */
+    margin:0;
+    background-color:#f0f3ef;
+    /* overflow-x:hidden; */
+}
+#beijing{
+    width: 1900px;
+    height: 470px;
+    position: relative;
+    /* background-position: 100% 0; */
+    /* background-attachment: fixed; */
+    left:-285px;
+}
+ul{
+     /* 去掉ul的外边距   margin设置所有外边距属性*/
+     /* margin:10px 5px 15px 20px;
+    上外边距是 10px
+    右外边距是 5px
+    下外边距是 15px
+    左外边距是 20px */
+    margin: 0;
+}
+li{
+    /* 去掉li自带的前缀样式 去掉<li>字前面的点 */
+    list-style: none;
+    margin-left: 8px;
+    font-size: 12px;
+    /* 设置字变得和背景一样的颜色 */
+    color:rgb(153, 153, 153); 
+    line-height: 28px;
+    /* line-height : normal |<实数> | <长度> | <百分比> | inherit
+    说明：设置元素中行的高度。
+    值： normal：默认行高，一般为1到1.2；实数：实数值，缩放因子；长度：合法的长度值，可为负数；百分比：百分比取值基于元素的字体尺寸。
+     */
+}
+
+#header{
+    width: 100%;
+    height: 30px;
+    background-color:#e3e4e5;
+    /* 弹性布局横向排列 */
+    display:flex;
+    /* 在弹性盒对象的 <div> 元素中的各项周围留有空白： */
+    justify-content: space-around;
+    
+}
+#header_left{
+    width: 72px;
+    height: 30px;
+    position: relative;
+    left: 140px;
+    /* background: #f0f3ef; */
+    
+}
+#header_left_ul li{
+    position: relative;
+    left: -21px;
+    top:3px;
+}
+#header_right{
+    /* border: #f10215 1px solid; */
+    width: 750px;
+    position: relative;
+    left: 25px;
+    /* margin-left: -30px; */   
+}
+#nav-list1{
+    /* margin-left: -10px; */
+    /* border: #f10215 1px solid; */
+    display:flex;
+    justify-content: space-around;
+}
+#nav-list1 a{
+    color:#999999;
+}
+#nav-list1 a:hover{
+    color:#f10215;
+}
+#location{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+#location2{
+    position:absolute;
+    right: 100px;
+    top: 120px;
+}
+#li_two{
+    /* 字体颜色 */
+    color:  rgb(227, 51, 51);
+}
+/* :hover鼠标指针浮动在其上的元素，并设置其样式： */
+.li_red:hover{
+    color: rgb(227, 51, 51);
+    /* 光标变成小手 */
+    cursor: pointer;
+}
+    /* 只把li的第二个子元素设置颜色 */
+    /* li:nth-child(2){
+    color: rgb(227, 51, 51);
+    } */
+
+.line{
+    color: #cccccc;
+    margin-top: 3px;
+}
+#middle{
+    width: 100%;
+    height: 150px;
+    /* display:flex;
+    justify-content: space-around; */
+}
+#middle_top{
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+}
+#middle_middle{
+    width: 1200px;
+    height: 20px;
+    margin: 0 auto;
+    justify-content: center;
+    display: flex;
+    font-size: 12px;
+    /* 设置字变得和背景一样的颜色 */
+}
+#middle_middle a{
+    color: rgb(153, 153, 153);
+}
+#middle_middle a:hover{
+    color: #f10215;
+}
+a{
+    font-size: 12px;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+#middle_bottom{
+      /* width: 1200px;
+      height: 25px; */
+      /* font-size: 17px;      
+      line-height: 28px;
+      margin-left: 140px;
+      border: rgb(199, 23, 23) 1px solid; */
+}
+#middle_bottom_ul{
+      width: 720px;
+      height: 20px;
+      display:flex;
+      justify-content: space-around;
+      position: relative;
+      left: 290px;
+      top: 20px;
+      /* border: rgb(199, 23, 23) 1px solid; */
+}
+#middle_bottom ul li a{
+    color: rgb(77, 76, 76);
+    font-size: 14px;
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \5b8b体, sans-serif;
+}
+#middle_bottom ul li a:hover{
+    color: #f10215;
+    font-size: 14px;
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \5b8b体, sans-serif;
+}
+#logo{
+  position: absolute;
+  top:0;
+  left:75px;
+  border:1px solid #ededed;
+}
+#ipt{
+    /* 设置输入框的大小 */
+    width: 490px;
+    height: 35px;
+    margin-top: 25px;
+    margin-left: -20px;
+    /* 去掉输入框线 */
+    border-style: none;
+}
+#camera{
+    width: 25px;
+    height: 21px;
+    position: absolute;
+    top: 63px;
+    right: 450px;
+}
+#button{
+    width: 50px;
+    height: 37px;
+    position: absolute;
+    top: 55px;
+    background-color:#f10215;
+    border: 0;
+    z-index: 1;
+}
+#button_i{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left:15px;
+}
+#button2{
+    width: 180px;
+    height: 37px;
+    position: absolute;
+    right:190px;
+    top: 54px;
+    background-color:white;
+    border: 0;
+    color: red;
+}
+#button_gwc{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 10px;
+    right:130px;    
+}
+.shop{
+    font-size: 12px;
+    color: #f10215;
+}
+.shop:hover{
+    /* 光标变成小手 */
+    cursor: pointer;
+}
+#mobile_qrcode{
+    position: absolute;
+    right:103px;
+}
+#J_fs_act{
+    width: 1349px;
+    height: 480px;
+    /* background-color:gray; */
+}
+#J_fs_act0{
+    width: 1190px;
+    height: 480px;
+    margin: 0 auto;
+    /* 弹性布局  让布局变成横向排列*/
+    display:flex;
+    position: relative;
+    top:-480px;
+    left:-5px;
+}
+#J_fs_act1 li{
+    position: relative;
+    top:10px;
+    left: 20px;
+    padding-left: 10px;
+}
+#J_fs_act1 li a{
+    font-size: 13px;
+    color: rgb(98, 98, 98);
+    font-family: Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \5b8b体, sans-serif;
+}
+#J_fs_act1 li a:hover{
+    color: #f10215;
+}
+.cate_menu_item:hover{
+    background-color: #e6e4e4;
+}
+
+#J_fs_act1{
+    width: 180px;
+    height: 480px; 
+    padding-left: 10px;
+    background-color: white;  
+}
+#J_fs_act2{
+    width: 590px;
+    height: 470px;
+    margin-top:10px;
+}
+#J_fs_act3{
+    width: 190px;
+    height: 480px;
+    margin-left: 10px;
+}
+#J_fs_act4{
+    width: 190px;
+    height: 480px;
+    margin-left: 10px;
+    background-color: white;
+}
+#act_1{
+    width: 190px;
+    height: 150px;
+    margin-top:10px;
+}
+#act_2{
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
+}   
+#act_3{
+    width: 190px;
+    height: 150px;
+    margin-top: 10px;
+}
+.cate_menu_item
+{
+    width: 180px;
+    height: 27px;
+    margin-left: -30px;  
+    line-height: 18px;  
+}
+#user_inner1{
+    width: 190px;
+    height: 150px;
+    margin-top: 10px; 
+}
+#user_inner2{
+    width: 190px;
+    height: 121px;
+}
+#mob_tab1{
+    width: 170px;
+    height: 25px;
+    line-height: 13px;
+    position: relative;
+    padding-top: -8px; 
+    font-weight: 400;  
+    padding-right:15px;
+    padding-left:15px;
+}
+#mob_tab1 a{
+    color:#575555;
+}
+#mob_tab1 a:hover{
+    color:#f10215;
+}
+#mob_tab2{
+    width: 190px;
+    height: 96px;   
+    padding: 5px;
+    color:#666666;
+}
+#mob_tab2 ul{     
+    padding: 5px;
+    margin-left: 30px;
+}
+#new_item_ul{
+    /* overflow: hidden; */
+    /* color:#666666; */
+    padding: 5px;
+}
+#mob_tab2 li{
+    position: relative;
+    top:5px;
+    line-height: 18px;
+    margin-top:3.5px;
+    font-size: 12px;
+}
+.news_item{
+    color:rgb(153, 153, 153);  
+}
+.news_link{
+    margin-left:-32px;
+    color:rgb(153, 153, 153);  
+}
+#kong{
+    width: 73px;
+    height: 25px;
+    /* div转化为行内块元素 */
+    display: inline-block;
+}
+#user_inner3{
+    width: 190px;
+    height: 194px;
+    position: relative;
+    top:20px;
+    left: 10px;
+    color:#cdb3bd;
+}
+#service_entry{
+    width: 190px;
+    /* height: 168px; */
+    border-top:1px #ebeaea solid;
+    justify-content: space-evenly;
+     /* 弹性布局  让布局变成横向排列*/
+     display:flex;
+     /* 折行，默认是不折行的 */
+     /* align-items: center; */
+     flex-wrap: wrap;
+     align-content: center;
+     padding-top: 10px;
+     position: relative;
+     top:-10px;
+}
+.service_lk{
+    width: 45px;
+    height: 63px;
+    position: relative;
+}
+#user_level1{
+    width: 190px;
+    height: 80px; 
+}
+#user_inner1_level1_i{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    box-shadow: rgba(45, 45, 45, 0.15) 6px 8px 20px 0px;
+    /* border-left-color: rgb(102, 102, 102);
+    border-right-color: rgb(102, 102, 102); */
+    color: rgb(102, 102, 102);
+    /* border:10px rgb(212, 209, 209) solid; */
+    position: relative;
+    left:68px;
+}
+#user_level2{
+    width: 190px;
+    height: 40px; 
+    position: relative;
+    margin-top: -15px;
+}
+.user_top{   
+    width: 190px;
+    height: 20px;
+    text-align: center;
+    /* border:1px turquoise solid;  */
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(136, 136, 136);
+    padding-left: 2px;
+    padding-right: 2px;        
+    /* margin: auto 0; */
+}
+.user_middle{
+    width: 190px;
+    height: 20px;
+    text-align: center;
+}
+.user_middle a{
+    color: #666666;
+}
+.user_middle a:hover{
+    color: #f10215;
+}
+.user_login{
+    width: 28px;
+    height: 17px; 
+    text-align: center;   
+    font-size: 12px;    
+}
+.user_reg{
+    width: 28px;
+    height: 17px;  
+    text-align: center;
+    font-size: 12px; 
+}
+
+#user_level3{
+    width: 190px;
+    height: 30px; 
+    padding-top:10px; 
+}
+#user_level3_lk1{
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    border-radius: 13px;
+    box-shadow: rgba(45, 45, 45, 0.15) 6px 8px 20px 0px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 5px;    
+    color: rgb(224, 18, 34);
+    display: inline-block; 
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+#user_level3_lk1:hover{
+    background-color: rgb(224, 18, 34);
+    color: white;
+}
+#user_level3_lk2{
+    width: 70px;
+    height: 25px;
+    text-align: center;
+    border-radius: 15%;
+    margin-right: 5px;
+    display: inline-block;
+    font-size: 12px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 13px;
+    box-shadow: rgba(45, 45, 45, 0.15) 6px 8px 20px 0px;
+    color: #e5d790;
+    background-color: black;
+    line-height: 25px;
+}
+#user_level3_lk2:hover{
+    background-color: rgb(224, 18, 34);
+    color: white;
+}
+#J_fs_act_img{
+
+}
+#xiaosanjiao{
+    width: 0;
+    height: 5px;
+    border: 8px  solid;
+    border-color:transparent transparent #f0f3ef  transparent;
+    position: relative;
+    left:23px;
+    top:-85px;
+}
+
+.huafei_1{
+    font-size: 12px;
+    /* 水平方向上居中 */
+    /* justify-content: center; */
+    /* 垂直方向上 上下居中 */
+            /* align-items: center;   */
+}
+.huafei{
+    width: 25px;
+    height: 25px;
+}

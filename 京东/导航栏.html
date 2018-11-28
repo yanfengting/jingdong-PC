@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>仿京东导航栏</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script src="../js/jquery.js"></script>
+	<style>
+	ul{list-style-type:none;} 
+	/*#menu{background-image:url('./img/menu.jpg');background-repeat:repeat-x;height:40px;line-height:40px;} // 这个需要截取京东的导航条一像素的竖线*/
+	#menu{background-color:#E23839;height:40px;line-height:40px;}
+	#menu>ul>li{float:left;width:100px;font-size:20px;line-height:40px;color:#FFFFFF;cursor:pointer;}
+	</style>
+</head>
+<body>
+<center>
+<div id="menu">
+	<div id="logo"></div>
+	<ul>
+		<li style="background:#A40000;">菜单</li>
+		<li>菜单</li>
+		<li>菜单</li>
+		<li>菜单</li>
+		<li>菜单</li>
+	</ul>
+</div>
+<script>
+$(function(){
+// menu 的  js
+$('#menu>ul>li').mouseover(function(){
+		co = '#A40000';		// 要设定的颜色。
+		color = $(this).css('background-color');	// 当前颜色记录
+		$(this).css('background-color',co);
+		$(this).mouseout(function(){
+			$(this).css('background-color',color);
+		});
+		$(this).click(function(){
+			$(this).siblings().css('background-color','');
+			$(this).mouseout(function(){
+				$(this).css('background-color',co);
+			});
+		});
+});
+});
+</script>
+</center>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            margin:0;
+        }
+        nav{
+            background-color: aqua;
+        }
+        #nav-list{
+            list-style: none;
+            padding: 0;
+            margin:0;
+            display:flex;
+        }
+        #nav-list li{
+            height: 30px;
+            line-height: 30px;
+            /* 上下0px 左右20px */
+            padding: 0 20px;
+        }
+        /* #nav-list li:hover{
+            background-color: white;
+        } */
+
+        #xiaomi{
+            width: 200px;
+            background-color: yellowgreen;
+            /* border: 1px solid #666666; */
+            position: absolute;
+            top:30px;
+            left:0;
+            height: 100px;
+            border: #5f5f5f 1px solid;
+
+            /* overflow: hidden; */
+            /* transition允许css的属性值在一定的时间区间内平滑地过渡。这种效果可以在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值 */
+            transition: all 0.3s;
+            transition-delay: 0s;
+        }
+        /* 加上#为了让.hide的优先级和小米可以相等 */
+        #xiaomi.hide{
+            height: 0px;
+            transition-delay: 0.2s;
+        }
+        /* .hide{
+            height: 0px !important;
+        } */
+        #wdjd{
+            background-color: rgb(17, 146, 2);
+        }
+        #wdjd.hide{
+            height: 0px;
+        }
+        
+        
+        /* 底部 */
+         #J-trigger {
+            width: 34px;
+            height: 35px;
+            background-color: #5f5f5f;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            border-radius: 5px 5px 0 5px;
+            cursor: pointer;
+        }
+
+        #J-trigger:hover {
+            background-color: #e33333;
+        }
+        #box{
+            width: 45px;
+            background-color: yellowgreen;
+            /* border: 1px solid #666666; */            
+            height: 35px;
+
+            /* overflow: hidden; */
+            /* transition允许css的属性值在一定的时间区间内平滑地过渡。这种效果可以在鼠标单击、获得焦点、被点击或对元素任何改变中触发，并圆滑地以动画效果改变CSS的属性值 */
+            transition: all 0.3s;
+            transition-delay: 0s;
+
+            position: fixed;
+            bottom: 0;
+            right: 35px;
+        }
+        #box.hide1{
+            /* right: -10px; */
+            transition-delay: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <nav >
+        <ul id="nav-list">
+            <li id="wdjd" class="hide">我的京东</li>
+            <li>红米</li>
+            <li>电视</li>
+        </ul>
+    </nav>
+
+    <div class="hide" id="xiaomi">
+        <ul>
+            <li>小米1</li>
+            <li>小米2</li>
+            <li>小米3</li>
+        </ul>
+    </div>
+
+    <footer>
+            <div id="J-trigger" >
+                <a href="">
+                    <img class="img-foot" src="images/global/向上箭头.png" alt="">
+                </a>
+            </div>
+            <div class="tab-text hide1" id="box">
+                <li>顶部</li>
+            </div>
+    </footer>
+  
+</body>
+<script>
+    var xiaomi = document.getElementById("xiaomi");
+    var lis = document.querySelectorAll("#nav-list li");
+    var xm = document.getElementById("wdjd");
+    // onmouseenter鼠标放在第一个导航栏，下面出现下拉框，remove移除，也就是#xiaomi.hide隐藏的话就会出现下拉框
+    lis[0].onmouseenter = function(){
+        xiaomi.classList.remove("hide");
+        xm.classList.remove("hide");
+    }
+    lis[0].onmouseleave = function(){
+        xiaomi.classList.add("hide");
+        xm.classList.add("hide");
+    }
+    // 为了让导航栏停在那里可以点击。
+    xiaomi.onmouseenter = function(){
+        xiaomi.classList.remove("hide");
+        xm.classList.remove("hide");
+    }
+
+    xiaomi.onmouseleave = function(){
+        xiaomi.classList.add("hide");
+        xm.classList.add("hide");
+    }
+//dibu
+    var box = document.getElementById("box");
+    var lis = document.querySelectorAll("#J-trigger li");
+    lis[0].onmouseenter = function(){
+        xiaomi.classList.remove("hide1");
+    }
+    lis[0].onmouseleave = function(){
+        xiaomi.classList.add("hide1");
+    }
+
+    
+
+</script>
+</html>

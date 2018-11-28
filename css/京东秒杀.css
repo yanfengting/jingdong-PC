@@ -1,0 +1,147 @@
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: left;
+}
+
+.sk{
+    height: 275px;
+    margin: 30px 0;
+}
+.sk_inner{    
+    width: 1180px;
+    height: 275px;
+    margin: 0 auto;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    left: -10px;
+}
+.sk_hd{
+    position: relative;
+    float: left;
+    width: 190px;
+    height: 275px;
+    background: #e83632;
+    color: #fff;
+}
+.sk_bd{
+    float: left;
+    background: #96706f;
+    position: relative;
+    float: left;
+    width: 799px;
+    border-right: solid 1px #f0f0f0;
+    height: 275px;
+    overflow: hidden;
+}
+
+.slider_item_lk{
+    position: relative;
+    display: block;
+    width: 190px;
+    height: 275px;
+    text-align: center;
+    margin: auto;
+}
+.slider_control{
+    width: 20px;
+    height: 40px;
+    line-height: 30px;
+    position: relative;
+    font-size: 20px;
+    z-index: 2;
+    top: 110px;
+}
+.slider_control_left{   
+    float: left;
+}
+.slider_control_right{
+    float: right;
+}
+.sk_chn {
+    position: relative;
+    float: left;
+    width: 170px;
+    height: 260px;
+    padding: 8px 10px 7px;
+}
+.slider_list img{
+    width: 170px;
+    height: 260px;
+}
+/* 时尚达人 */
+.floorhd {
+    height: 65px;
+}
+.grid_c1 {
+    margin: 0 auto;
+    width: 1190px;
+}
+.floorhd_tit {
+    position: relative;
+    width: 150px;
+    height: 45px;
+    font-size: 28px;
+    font-family: 'fzzzh';
+    font-weight: normal;
+    text-align: center;
+    line-height: 45px;
+    padding: 0 50px;
+    margin: 0 auto 20px;
+    overflow: hidden;
+    color: #222;
+}
+.floorhd_tit::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: #222;
+    top: 19px;
+    left:10px;
+}
+.floorhd_tit::after {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    display: block;
+    background: #222;
+    top: 19px;
+    right:10px;
+}
+.chn{
+    height: 480px;
+}
+.n1{
+    position: relative;
+    left:80px; 
+}
+.n2{
+    position: relative;
+    left:80px; 
+}
+.grid_c1{
+    /* margin: 0 auto; */
+    width: 1190px;
+}
+.box {
+    float: left;
+    width: 386px;
+    height: 450px;
+    margin: 0 10px 30px 0;
+    background: #fff;
+}
+.box_sort{
+    width: 346px;
+    height: 450px;
+    margin: 0 20px;
+}
+.box_hd{
+    height: 60px;
+    font-size: 0;
+    line-height: 0;
+}

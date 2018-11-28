@@ -1,0 +1,51 @@
+1.
+/* 转为行元素 */
+/* display: inline; */
+/* 转为块元素 */
+/* display: block; */
+/* 转为行内块 */
+/* display: inline-block; */
+行元素   display:line   不单独占一行，可以拼接，不能设置宽高 占满以后才换行a
+块元素   display: block;   单独占一行 能设置宽高  div  p
+行内块元素  display: inline-block;   可以拼接 不能设置宽高  单独占一行  button
+
+2.谁下面的谁
+#父级元素box a{
+
+}
+
+3.margin: 0 auto;
+/* 外边距
+一个值：上下左右
+两个值：上下 左右
+四个值：上 右 下 左  */
+
+4.跳转<a href="#a1">a1</a>
+
+5.优先级
+!important>行内样式>id选择器>class选择器>标签名选择器
+
+6.定位方式
+/* 相对定位 */
+/* position: relative; */
+
+/* 默认的定位方式 */
+/* position: static; */
+/* 绝对定位 */
+/* position: absolute; */
+/* left 左 */
+            /* left: 30px; */
+            /* right 右 */
+            /* right: 100px; */
+            /* top 上  */
+            /* top: 100px; */
+            /* bottom 下 */
+            /* bottom: 100px; */
+
+             /* 固定定位 */
+            position: fixed;
+
+li{
+    /* 去掉默认的自带的圆点 */
+    list-style: none;
+        }
